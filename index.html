@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+</style>
+</head>
 <body>
-<script src="https://cdn.nuclia.cloud/nuclia-video-widget.umd.js"></script>
-<nuclia-search-bar 
-  knowledgebox="12e03940-0389-4250-865a-3d6171a408c8"
+<div class="centered">
+  <script src="https://cdn.nuclia.cloud/nuclia-video-widget.umd.js"></script>
+  <nuclia-search-bar 
+    knowledgebox="12e03940-0389-4250-865a-3d6171a408c8"
     zone="europe-1"
-  features="answers,citations,permalink,navigateToLink,navigateToFile,hideThumbnails,autocompleteFromNERs,relations" ></nuclia-search-bar>
-<nuclia-search-results ></nuclia-search-results>
+    features="answers,citations,permalink,navigateToLink,navigateToFile,hideThumbnails,autocompleteFromNERs,relations">
+  </nuclia-search-bar>
+  <nuclia-search-results></nuclia-search-results>
+</div>
 </body>
 </html>
